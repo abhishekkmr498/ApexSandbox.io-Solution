@@ -1,6 +1,6 @@
 public static Integer arraySum(List<Integer> numbers) {
     //code here
-    static Decimal sum=0;
+    Integer sum=0;
 
     if(numbers==null || numbers.size()==0){
         reurn 0;
