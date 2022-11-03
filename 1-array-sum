@@ -1,0 +1,13 @@
+public static Integer arraySum(List<Integer> numbers) {
+    //code here
+    Decimal sum=0;
+    if(numbers==null || numbers.size()==0){
+        reurn 0;
+    }else{
+        for(Integer num : numbers){
+            sum+=num;
+        }
+    }
+    return sum;
+
+}
