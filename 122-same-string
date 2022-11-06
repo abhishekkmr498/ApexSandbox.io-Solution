@@ -1,0 +1,18 @@
+public static Boolean sameString(String str1, String str2){
+    // solution
+    if(String.isNotBlank(str1) && String.isNotBlank(str2)){
+        list<String> first= (str1+'v').split('#');
+        list<String> second= (str2+'v').split('#');
+        String str1Sanitsed='';
+        String str2Sanitsed='';
+        for(String st : first){
+            str1Sanitsed+= st.subString(0,(st.length()>1 ? st.length()-1 :0));
+        }
+         for(String st : second){
+             str2Sanitsed+= st.subString(0,(st.length()>1 ? st.length()-1 :0));
+         }
+         return str1Sanitsed.equals(str2Sanitsed);
+    }else{
+        return false;
+    }
+}
