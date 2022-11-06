@@ -1,5 +1,9 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    return record.getSobjectType()== Account.getSobjectType();
+    if(record==null){ 
+        return false;
+    }else{
+        return record.getSobjectType()== Account.getSobjectType();
+    }
 }
