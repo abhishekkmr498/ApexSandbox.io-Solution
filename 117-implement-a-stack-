@@ -1,0 +1,30 @@
+public class Stack {
+    
+    public list<Object> stack = new List<Object>();
+    public Integer currSize = -1; 
+    public void push(Object obj) {
+        //implement push        
+        this.stack.add(obj);
+        this.currSize=this.currSize+1;
+    }
+    
+    public Object pop() {
+        //implement pop
+         return !this.isEmpty()? this.stack.remove(this.currSize--) : null;
+    }
+    
+    public Integer size() {
+        //implement size
+        return this.stack.size();
+    }
+    
+    public Object peek(){
+        //implement peek
+       return this.stack.get(this.currSize);
+    }
+    
+    public Boolean isEmpty() {
+        //implement isEmpty
+        return this.currSize==-1 ? true: false;
+    }
+}
